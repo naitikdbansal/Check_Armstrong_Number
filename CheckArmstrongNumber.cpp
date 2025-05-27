@@ -2,115 +2,39 @@
 using namespace std;
 
 int main(){
+int a;
+int b;
+int c;
+int d;
+int e;
+int f;
+int g;
 
-int x;
-int y;
-int z;
-long long a;
-long long b;
-long long c;
-long long d;
-long int m;
-long int n;
+cout<<"Please enter 3-Digit number : ";
+cin>>a;
 
-cout<<"Enter First digit of number : ";
-cin>>x;
+b=a%10; //third digit
+c=a/10; //quotient
 
-// switch(x){
-// case 0 : 
-// break;
-//     case 1 : 
-//     break;
-//     case 2 : 
-//     break;
-//     case 3 : 
-// break;
-//     case 4 : 
-// break;
-//     case 5 : 
-// break;
-//     case 6 : 
-// break;
-//     case 7 : 
-// break;
-//     case 8 : 
-// break;
-//     case 9 : 
-// break;
-//     default : cout<<"Please Enter only ONE INTEGER value"<<endl;
-//     break;
-// }
+d=c%10; //second digit
+e= c/10; //quotient
+
+f= e%10; //first digit
+g= e/10;
 
 
+f=f*f*f;
+d=d*d*d;
+b=b*b*b;
 
-cout<<"Enter Second digit of number : ";
-cin>>y;
+if((f+d+b)==a){
 
-// switch(y){
-//     case 0 : 
-// break;
-//     case 1 : 
-// break;
-//     case 2 : 
-// break;
-//     case 3 : 
-// break;
-//     case 4 : 
-// break;
-//     case 5 : 
-// break;
-//     case 6 : 
-// break;
-//     case 7 : 
-// break;
-//     case 8 : 
-// break;
-//     case 9 : 
-// break;
-//     default : cout<<"Please Enter only ONE INTEGER value"<<endl;
-//     break;
-// }
+cout<<"Armstrong number!";
 
-cout<<"Enter Third digit of number : ";
-cin>>z;
-// switch(z){
-// case 0 : 
-// break;
-//     case 1 : 
-// break;
-//     case 2 : 
-// break;
-//     case 3 : 
-// break;
-//     case 4 : 
-// break;
-//     case 5 : 
-// break;
-//     case 6 : 
-// break;
-//     case 7 : 
-// break;
-//     case 8 : 
-// break;
-//     case 9 : 
-// break;
-//     default : cout<<"Please Enter only ONE INTEGER value"<<endl;
-//     break;
-// }
-
-m=x*100;
-n=y*10;
-d=m+n+z;
-
-a=x*x*x;
-b=y*y*y;
-c=z*z*z;
-
-if(a+b+c==d){
-    cout<<"Armstrong number!"<<endl;
 }
+
 else{
-    cout<<"NOT ARMSTRONG NUMBER"<<endl;
+    cout<<"Not Armstrong Number";
 }
 
 
@@ -118,8 +42,3 @@ return 0;
 
 
 }
-
-
-//solve again using quotint modulo method
-
-
